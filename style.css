@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    background-color: #1CBBB4; /* Light background color */
+    color: #1A2E35;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1A2E35; /* Dark background color for container */
+    color: #1CBBB4; /* Text color inside the container */
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1, h2, h4, h5 {
+    color: #1CBBB4;
+}
+
+.alert {
+    color: #1A2E35;
+    background-color: #FFC700;
+    border-color: #FFD700;
+}
+
+a {
+    color: #1CBBB4;
+}
+
+a:hover {
+    color: #17a9a0;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border: 1px solid #1CBBB4;
+    background-color: #FFFFFF;
+    color: #1A2E35;
+}
+
+.form-control::placeholder {
+    color: #1A2E35;
+}
+
+.form-btn .btn-primary {
+    background-color: #1A2E35;
+    border-color: #1CBBB4;
+    color: #1CBBB4;
+}
+
+.form-btn .btn-primary:hover {
+    background-color: #17a9a0;
+    border-color: #17a9a0;
+    color: #FFFFFF;
+}
+
+.form-btn .btn-warning {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #1A2E35;
+}
+
+.form-btn .btn-warning:hover {
+    background-color: #FFC700;
+    border-color: #FFC700;
+    color: #1A2E35;
+}
+
+/* Category Section Styles */
+.category_section {
+    padding: 60px 0;
+    background-color: #E0E0E0; /* Light background color */
+}
+
+.category_section .heading_container h2, 
+.category_section .heading_container h4 {
+    color: #1A2E35;
+}
+
+.category_container .box {
+    background-color: #1A2E35; /* Dark background color for boxes */
+    border: 2px solid #1CBBB4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category_container .box .img-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.category_container .box .detail-box h5 {
+    margin-top: 15px;
+    color: #FFFFFF;
+}
