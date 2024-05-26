@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="confirmation.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Information Submitted</h1>
+        <p><strong>Event Name:</strong> <span id="eventName"></span></p>
+        <p><strong>Club Name:</strong> <span id="clubName"></span></p>
+        <p><strong>Event Date:</strong> <span id="eventDate"></span></p>
+        <p><strong>Event Description:</strong></p>
+        <p id="eventDescription"></p>
+        <div class="emoji emoji--haha">
+            <div class="emoji__face">
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth">
+                    <div class="emoji__tongue"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Set the event details from URL parameters
+        document.getElementById('eventName').textContent = getUrlParameter('eventName');
+        document.getElementById('clubName').textContent = getUrlParameter('clubName');
+        document.getElementById('eventDate').textContent = getUrlParameter('eventDate');
+        document.getElementById('eventDescription').textContent = getUrlParameter('eventDescription');
+    </script>
+</body>
+</html>

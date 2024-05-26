@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -14,38 +14,40 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h1 {
     text-align: center;
 }
 
 label {
     font-weight: bold;
+    display: block;
+    margin-top: 20px;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="date"], textarea {
     width: 100%;
     padding: 10px;
-    margin: 8px 0;
+    margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 textarea {
-    height: 150px;
+    height: 100px;
 }
 
-button{
-    background-color: #1CBBB4;
-    color: black;
+button {
+    background-color: #4CAF50;
+    color: #1CBBB4;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin-top: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #45a049;
 }

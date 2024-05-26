@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anonymous Message Sender</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Information Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h2>Send an Anonymous Message</h2>
-    <form id="messageForm" action="submit_message.php" method="post">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-
-        <button><label>SEND</label></button>
-    </form>
-</div>
-
+    <div class="container">
+        <h1>Event Information Form</h1>
+        <form action="submit_event.php" method="post">
+            <label for="eventName">Event Name</label>
+            <input type="text" id="eventName" name="eventName" required>
+            
+            <label for="clubName">Club Name</label>
+            <input type="text" id="clubName" name="clubName" required>
+            
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            
+            <label for="eventDescription">Event Description</label>
+            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
